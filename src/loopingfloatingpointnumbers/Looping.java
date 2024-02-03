@@ -33,7 +33,7 @@ public class Looping {
 				 */
 		Scanner scnr = new Scanner(System.in)) {
 			int count;
-	        float maximum = -1;
+	        float maximum = Float.NEGATIVE_INFINITY;
 	        float minimum = 0; 
 	        float total = 0;
 
@@ -59,7 +59,7 @@ public class Looping {
 	       // System.out.println("End of first loop");
 
 
-	        float average = total / count;
+	        float average = total / 5;
 	        float interest = total * 0.2f;
 
 	        System.out.println("Total: " + total);
