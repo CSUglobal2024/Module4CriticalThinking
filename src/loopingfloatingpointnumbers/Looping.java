@@ -32,26 +32,23 @@ public class Looping {
 				Step 6: Do not forget to close the scanner
 				 */
 		Scanner scnr = new Scanner(System.in)) {
-			int count;
+			int count = 0;
 	        float maximum = Float.NEGATIVE_INFINITY;
 	        float minimum = 0; 
 	        float total = 0;
+	        
+	        System.out.println("Type in any 5 numbers pressing enter after each number:");
 
-	        for (count = 0; count < 5; count++) {
-	            System.out.print("Enter a floating-point value: ");
-	            float input = scnr.nextFloat();
-
-	            if (count == 0) {
-	                minimum = input;
-	            } else if (input < minimum) {
-	                minimum = input;
-	            }
-
-	            if (input > maximum) {
-	                maximum = input;
-	            }
-	            
-	            total += input;
+	        while (count < 5) {
+	        	float num = scnr.nextFloat();
+	        	total += num;
+	        	if (num < minimum ) {
+	        		minimum = num;
+	        	}
+	        	if (num > maximum) {
+	        		maximum = num;
+	        	}
+	        	++count;
 	        }
 	        scnr.close();
 
