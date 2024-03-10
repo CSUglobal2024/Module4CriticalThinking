@@ -49,14 +49,11 @@ public class Looping {
 
 	            if (input > maximum) {
 	                maximum = input;
-	               // System.out.println(maximum);
 	            }
 	            
 	            total += input;
-	           // System.out.println(total);
 	        }
 	        scnr.close();
-	       // System.out.println("End of first loop");
 
 
 	        float average = total / 5;
